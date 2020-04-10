@@ -8,6 +8,8 @@ const timeToTimeout = "5s"
  
 express()
   .use(timeout(timeToTimeout))
+  .get('/activate', async function (req, res) {
+    res.send({status:200, message: "heroku is up"})
   .get('/audio/:id', async function (req, res) {
     const id = req.params.id
     console.log("converting track...")
