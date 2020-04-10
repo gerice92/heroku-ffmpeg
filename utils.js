@@ -1,6 +1,5 @@
 const { exec } = require("child_process");
 const fs = require("fs")
-let token = process.env.token
 
 const getConvertedSong = async (id) => {
     const fileName = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
